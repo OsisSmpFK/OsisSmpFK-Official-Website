@@ -1,0 +1,156 @@
+
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OsisSmpFk</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Magazine</a></li>
+           
+        </ul>
+    </nav>
+    <nav>
+        <ul>
+            <li><a href="#home" class="dark">Home</a></li>
+            <li><a href="#about" class="dark">About</a></li>
+            <li><a href="#portfolio" class="dark">Magazine</a></li>
+           
+        </ul>
+    </nav>
+    
+
+    <!-- Section Home -->
+<section id="home">
+    <div class="content">
+        <div class="text">
+            <h1> OsisSmpFk</h1>
+           
+            <a href="#portfolio" class="button">OsisMagz</a>
+        </div>
+        
+        </div>
+    </div>
+</section>
+
+
+    <!-- Section Gradasi -->
+    <div id="transition"></div>
+
+    <!-- Section About -->
+    <section id="about">
+        <div class="about-content">
+            <h2>About Us</h2>
+            <p>In 2017, A student council (OSIS)
+               at SMP Fastabiqul Khairat was founded to voice the student community.
+                Formed by students, OSIS assists in a wide range of school events and activities.
+                 Students actively participate in OSIS in order to develop communication, problem–solving skills and event management.
+                  They work together with the school management to solve students’ problems and improve the school conditions in general.
+                  <br><br> OSIS has always existed since OSIS was established in the 2017 year
+                    and with it the qualities of leadership and responsibility, joined by the essence of community service and teamwork.
+                     It enables students to realise themselves as natural leaders, make inclusive and informal activities with students 
+                     and the school around them and teach others through example.
+
+            </p>
+        </div>
+    </section>
+
+    <!-- Section Portfolio -->
+    <section id="portfolio">
+        <h2>OsisMagz</h2>
+          
+
+           <div class="card-magz">
+            <button class="btn-17">
+             <span class="text-container">
+             <a href="june.html" class="text">july edition</a>
+            </span>
+            </button>
+        
+           </div>
+
+           <div class="card-magz">
+            <button class="btn-17">
+             <span class="text-container">
+             <a href="june.html" class="text">agustus edition</a>
+            </span>
+            </button>
+        
+           </div>
+
+           <div class="card-magz">
+            <button class="btn-17">
+             <span class="text-container">
+             <a href="june.html" class="text">september edition</a>
+            </span>
+            </button>
+        
+           </div>
+
+           <div class="card-magz">
+            <button class="btn-17">
+             <span class="text-container">
+             <a href="june.html" class="text">oktober edition</a>
+            </span>
+            </button>
+        
+           </div>
+
+           <div class="card-magz">
+            <button class="btn-17">
+             <span class="text-container">
+             <a href="june.html" class="text">november edition</a>
+            </span>
+            </button>
+        
+           </div>
+
+           <div class="card-magz">
+            <button class="btn-17">
+             <span class="text-container">
+             <a href="june.html" class="text">December edition</a>
+            </span>
+            </button>
+        
+           </div>
+     
+      </section>
+    <script>
+        // Function to handle scroll event
+        window.addEventListener('scroll', function() {
+          const navLinks = document.querySelectorAll('nav ul li a');
+          const aboutSection = document.getElementById('about');
+          const portfolioSection = document.getElementById('portfolio');
+      
+          // Get the top position of the sections
+          const aboutTop = aboutSection.offsetTop;
+          const portfolioTop = portfolioSection.offsetTop;
+          const scrollPosition = window.scrollY;
+      
+          // Check if scroll is within the "About" or "Portfolio" section (white background)
+          if (scrollPosition >= aboutTop - 50) {
+            navLinks.forEach(link => {
+              link.classList.remove('dark');
+              link.classList.add('light');
+            });
+          } else {
+            // For the "Home" section (dark background)
+            navLinks.forEach(link => {
+              link.classList.remove('light');
+              link.classList.add('dark');
+            });
+          }
+        });
+      </script>
+      
+</body>
+</html>

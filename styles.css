@@ -1,0 +1,368 @@
+/* Global Styles */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Navigation for desktop and tablet (default) */
+nav {
+    position: fixed;
+    top: 20px;
+    right: 50px;
+    z-index: 1000;
+    transition: color 0.3s ease;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #b2f702; /* Warna saat hover */
+}
+
+nav ul li a.light {
+    color: black; /* Warna untuk background terang */
+}
+
+nav ul li a.dark {
+    color: white; /* Warna untuk background gelap */
+}
+
+/* Section Home */
+#home {
+    background-color: #555843;
+    color: white;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+    position: relative;
+    text-align: center;
+}
+
+#home .text {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#home .text h1 {
+    font-size: 48px;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+#home .button {
+    display: inline-block;
+    background-color: #b2f702;
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 10px 25px;
+    border-radius: 50px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#home .button:hover {
+    background-color: #32f3e6;
+    transform: translateY(-3px);
+}
+
+/* Gradien Transition AFTER Home */
+#transition {
+    height: 230px;
+    background: linear-gradient(to bottom, #555843, #e7e7e7);
+}
+
+/* About Section */
+#about {
+    background-color: #e7e7e7;
+    color: black;
+    padding: 1px 50px;
+    min-height: 80vh;
+}
+
+.about-content h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    margin-left: 50px;
+}
+
+.about-content p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-right: 30%;
+    margin-left: 50px;
+}
+
+/* Portfolio Section */
+#portfolio {
+    background-color: #e7e7e7;
+    padding: 1px 50px;
+    min-height: 110vh;
+}
+
+#portfolio h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#Partner{
+    background-color: #e7e7e7;
+    padding: 1px 50px;
+    min-height: 110vh;
+}
+
+#Partner h1{
+    text-align: center;
+}
+
+.Foto-Saya-1{
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-left: 34.5%;
+   }
+
+/* Portfolio Section */
+#portfolio {
+    background-color: #e7e7e7;
+    padding: 1px 50px;
+   height: 200vh;
+   
+}
+
+#portfolio h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.portfolio-container {
+    display: flex;
+    flex-direction: column; /* Susun secara vertikal */
+    gap: 20px; /* Jarak antar kartu */
+    border-radius: 15px; /* Membuat sudut melengkung */
+    width: 100%; /* Atur lebar container */
+    max-width: 800px; /* Batasi lebar maksimal */
+    margin: 0 auto; /* Pusatkan di layar */
+
+}
+
+.card-magz{
+
+        width: 95%;
+        height: 20vh;
+        background: #7bff00;
+        padding: 1rem;
+        border-radius: 1rem;
+        border: 0.5vmin solid #05060f;
+        box-shadow: 0.4rem 0.4rem #05060f;
+        overflow: hidden;
+        color: black;
+        background-color: #747264;
+        justify-content: center;
+        display: inline-block;
+        display: flex;
+        margin-bottom: 3vh;
+      
+}
+
+.portfolio-card:hover {
+    transform: translateY(-5px);
+}
+
+/* From Uiverse.io by doniaskima */ 
+.btn-17,
+.btn-17 *,
+.btn-17 :after,
+.btn-17 :before,
+.btn-17:after,
+.btn-17:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+
+.btn-17 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: #eadbd0;
+  background-image: none;
+  color: #a98e8e;
+  cursor: pointer;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 100%;
+  font-weight: 900;
+  line-height: 1.5;
+  margin: 0;
+  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  padding: 0;
+  text-transform: uppercase;
+  
+}
+
+.btn-17:disabled {
+  cursor: default;
+}
+
+.btn-17:-moz-focusring {
+  outline: auto;
+}
+
+.btn-17 svg {
+  display: block;
+  vertical-align: middle;
+}
+
+.btn-17 [hidden] {
+  display: none;
+}
+
+.btn-17 {
+  border-radius: 99rem;
+  border-width: 2px;
+  padding: 0.8rem 3rem;
+  z-index: 0;
+}
+
+.btn-17,
+.btn-17 .text-container {
+  overflow: hidden;
+  position: relative;
+}
+
+.btn-17 .text-container {
+  display: block;
+  mix-blend-mode: difference;
+}
+
+.btn-17 .text {
+  display: block;
+  position: relative;
+  text-decoration: none;
+}
+
+.btn-17:hover .text {
+  -webkit-animation: move-up-alternate 0.3s forwards;
+  animation: move-up-alternate 0.3s forwards;
+}
+
+@-webkit-keyframes move-up-alternate {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(80%);
+  }
+
+  51% {
+    transform: translateY(-80%);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes move-up-alternate {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(80%);
+  }
+
+  51% {
+    transform: translateY(-80%);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
+
+.btn-17:after,
+.btn-17:before {
+  --skew: 0.2;
+  background: #fff;
+  content: "";
+  display: block;
+  height: 102%;
+  left: calc(-50% - 50% * var(--skew));
+  pointer-events: none;
+  position: absolute;
+  top: -104%;
+  transform: skew(calc(150deg * var(--skew))) translateY(var(--progress, 0));
+  transition: transform 0.2s ease;
+  width: 100%;
+}
+
+.btn-17:after {
+  --progress: 0%;
+  left: calc(50% + 50% * var(--skew));
+  top: 102%;
+  z-index: -1;
+}
+
+.btn-17:hover:before {
+  --progress: 100%;
+}
+
+.btn-17:hover:after {
+  --progress: -102%;
+}
+
+
+
+
+
+@media (max-width: 768px) {
+    /* Navigation in rectangular container with rounded ends for smartphones */
+    nav {
+        top: 20px;
+        left: 50%;
+        right: auto;
+        transform: translateX(-50%);
+        width: 100%;
+        max-width: 300px; /* Set max width for the navigation bar */
+        background-color: rgba(255, 255, 255, 0.1); /* Transparan dengan sedikit warna */
+        backdrop-filter: blur(10px); /* Efek blur pada background */
+        border-radius: 50px; /* Membuat ujung berbentuk setengah lingkaran */
+        padding: 10px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    nav ul {
+        gap: 20px;
+        padding: 0;
+    }
+
+    nav ul li a {
+        font-size: 14px;
+    }
+}
